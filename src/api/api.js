@@ -1,14 +1,14 @@
 import axios from "axios";
 import {siteUrl} from "./constants";
 
-export const projectName = axios.create({
+export const domainFinder = axios.create({
   baseURL: `${siteUrl}`,
   headers: {
      "Content-Type": "application/json"
   },
 });
 
-projectName.interceptors.request.use(
+domainFinder.interceptors.request.use(
   (config) => {
     config.headers["Authorization"] = localStorage.getItem("access_token")
       ? "Bearer " + localStorage.getItem("access_token")
@@ -26,4 +26,4 @@ projectName.interceptors.request.use(
   }
 );
 
-export default projectName;
+export default domainFinder;

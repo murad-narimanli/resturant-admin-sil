@@ -1,3 +1,5 @@
+export const TYPE = 'TYPE';
+
 export const Types = {
     TYPE:'TYPE',
     LOGIN_USER:'LOGIN_USER',
