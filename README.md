@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Vue.JS Recruitment test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Tapşırıq 1
 
-## Available Scripts
+Tapşırıq Vue-cli 3 əsasında default forma ilə hazırlanmalıdır. (Əgər tapşırığı Reactjs ilə hazırlamaq istəsəniz, göstərilən mərhələlərin react ekvivalentləri ilə tapşırığı yerinə yetirə bilərsiniz. Sonda isə repozitoriyanı public formada bizə göndərin)
 
-In the project directory, you can run:
+Tapşırıq hazırlanan zaman minimal olaraq aşağıdakı alətlərdən istifadə edilməlidir. 
 
-### `npm start`
+- VueRouter
+- Vuex
+- SCSS və sair CSS pre-processor 
+- Tələb olunan zaman faylların yüklənməsi və s. funskionallıqlar 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tapşırıq 2
+Şəkillər demo məqsədlə göstərilmişdir. Tapşırığı hazırlayan zaman şəxsi dizayn prinsiplərinizdən istifadə edin. 
+Restoranın sifarişlərini idarə edə bilməsi üçün sadə formada admin panel hazırlayın. 
+1. Ana səhifədə şirkət haqqında ümumi məlumat olan informativ giriş səhifəsi, neçə sifariş olduğu və faktiki gün ərzində sonlandırılan sifarişlərin cəmi gəlirləri hər hansı formada səliqəli göstərilməlidir.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Daxil olan yemək sifarişləri barədə ümumi məlumat almaq üçün formanı hazırlayın. 
+    * Formada bütün sifarişlər ən son daxil olan sifarişdən geriyə sıralanaraq göstərilməlidir. 
+    * Sifariş məlumatları : Sıra sayı (S/S), Masa, Xidmətçi, Status, Məbləğ, Sonlanma Tarixi, Ətraflı.
+    * Statuslara görə sifarişləri ayırd etmək mümkün olsun. 1. Sonlanmayan 2. Sonlanan. 3. Ləğv edilən. (istəyinizə görə əlavə statuslar da tətbiq edə bilərsiniz) . 
+    * Sifarişlər listində ən birinci sonlanmayan sifarişlər olmalıdır. Ondan sonra digər statusda olan sifarişlər tarix ardıcıllığına görə göstərilməlidir. 
 
-### `npm test`
+3. Sifariş daxilində olan məlumatlara (yeməklər, qiymət və s.) ətraflı baxmaq üçün forma tətbiq edin. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+![first](https://user-images.githubusercontent.com/3234413/70997765-2cda5480-20ef-11ea-9141-16bdb6c14ac7.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tapşırıq 3
+Sifarişin yaradılması üçün formanı hazırlayın. 
+Yaradılma prosesi.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Sifarişin aid olduğu  masanı seçin
+* Xidmət edəcək şəxsi seçin 
+* Sifariş yarat düyməsini basaraq sifarişi başladın.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Sifariş yarandıqdan sonra müştərinin istədiyi yeməkləri siyahıdan seçərək sifarişə əlavə edin.
 
-### `npm run eject`
+Əlavə edilmə prosesində yemək adı və neçə ədəd olması göstərilməlidir. Qiymət avtomatik olaraq saya uyğun olaraq hesablanmalıdır. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![](https://user-images.githubusercontent.com/3234413/70997839-53988b00-20ef-11ea-9675-e45e18ebca1e.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Sifarişə artırılan bütün yeməklər avtomatik olaraq sifariş tərkibində olan yeməkləri göstərən siyahıya düşməlidir və alt tərəfdə sifariş tərkibində olan bütün yeməklərin cəmi məbləği dinamik olaraq hesablanmalıdır. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Yeməklərdən hər hansının ləğvi zamanı onun silinməsi funksionallığını təmin edin. Eyni zamanda sifarişdə olan yeməyin müştəriyə çatdığını və ya ləğv olunduğunu bildirmək üçün də statuslardan istifadə edə bilərsiniz.
+ 
+Sifariş daxilində heç bir yemək olmadan sonlandırıla bilməz. Ancaq ləğv edilə bilər. Bunun üçün yoxlama tətbiq edin. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![](https://user-images.githubusercontent.com/3234413/70997709-17fdc100-20ef-11ea-88ab-3594c67192b6.png)
 
-## Learn More
+Dataların API-dən qəbul ediləcəyini nümayiş etmək üçün ayrıca bir qovluqda .json formada demo məlumatları hazırlayın. Bundan sonra ajax (hər hansı library istifadə edə bilərsiniz) sorğular ilə mövcud məlumatları həmin json fayllarından əldə edin. Bu sizin REST API ilə işləmə bacarıqlarınızı yoxlamaq üçündür. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Requestlərin asinxron olduğunu nəzərə alaraq lazım olan yerlərdə məlumatların API-dən gələnədək gözlənilməsini təmin edin. Eyni zamanda request error handling tətbiq edin.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tapşırığı hazırlayan zaman API servislərin, Class-ların, view-ların və komponent-lərin məntiqi strukturda ayrıca qovluqlarda olmasına diqqət etməniz və eyni zamanda mümkün validasiyaları tətbiq etməniz tövsiyə olunur. 
