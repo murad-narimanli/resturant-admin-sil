@@ -1,83 +1,81 @@
-import { Types } from "../types"
-import { ProductCategories } from "../../const/data"
-import domainFinder from "../../api/api"
-import NotificationSet from "../../utils/notification"
+import * as types from '../types'
+import admin from "./../../const/api";
+import history from "./../../const/history";
+import axios from "axios"
+import {routes} from "../../services/api-routes"
 
-
-
-export const getCategory = () => {
-    return {
-        type: Types.GET_CATEGORY,
-        payload: {
-            categories:ProductCategories
-        }
-    }
-}
-
-
-
-export const getProduct = () => async (dispatch) => {
-    await domainFinder.get('/products').then((response)=>{
-        dispatch({
-            type: Types.GET_PRODUCT,
-            payload: {
-                products:  response.data
-            }
+export const getUserData = (exp) => async (dispatch) => {
+  dispatch({ type: types.LOADING_ON });
+  let token = localStorage.getItem("access_token")
+  console.log(token)
+  if (token !== null){
+     axios
+        .get(`https://reqres.in/api/${routes.profile.user}`)
+        .then((res) => {
+          dispatch({
+            type: types.SET_USER_LOGGED_IN,
+            payload: {...res.data.data},
+          });
         })
-    }).catch((error)=>{
-        dispatch({
-            type: Types.ERROR_PRODUCT,
-            payload: {
-               message:error.response.message
-            }
+        .catch((err) => {
+          dispatch({
+            type: types.LOG_OUT,
+          });
         })
-    })
-}
+        .finally(() => {
+          dispatch({ type: types.LOADING_OFF });
+        });
+  }
+  else{
+    dispatch({
+      type: types.LOG_OUT,
+    });
+    dispatch({ type: types.LOADING_OFF });
+  }
+};
 
-
-export const addProduct = (product) => async (dispatch) => {
-    await domainFinder.post('/products' , product).then((response)=>{
-        NotificationSet('Successfully created' , 'success')
-        dispatch(getProduct())
-    }).catch((error)=>{
+export const logInUser = (e, p) => async (dispatch) => {
+  if (e.trim().length === 0 ||   p.trim().length === 0) {
+    dispatch({
+      type: types.SET_USER_ERROR,
+      payload: { message: "İstifadəçi adı və şifrə daxil edilməlidir" },
+    });
+  } else {
+    dispatch({ type: types.LOADING_ON });
+    await axios
+      .post(`https://reqres.in/api/${routes.profile.login}` , {
+        username:e , password:p
+      })
+      .then((res) => {
+        localStorage.setItem("access_token", res.data.token);
+        dispatch(getUserData());
+        history.push("/");
+      })
+      .catch((error) => {
         dispatch({
-            type: Types.ERROR_PRODUCT,
-            payload: {
-               message:error.response.message
-            }
-        })
-    })
-}
+          type: types.SET_USER_ERROR,
+          payload: { message: "İstifadəçi adı və ya şifrə yanlışdır" },
+        });
+      })
+      .finally(() => {
+        dispatch({ type: types.LOADING_OFF });
+      });
+  }
+};
 
+export const toggleLoading = (payload) => ({
+  type: payload ? types.LOADING_ON : types.LOADING_OFF,
+});
 
+export const logOut = () => ({
+  type: types.LOG_OUT,
+});
 
-export const deleteProduct = (id) => async (dispatch) =>  {
-    await domainFinder.delete(`/products/${id}`).then((response)=>{
-        dispatch(getProduct())
-        NotificationSet('Successfully deleted' , 'success')
-    }).catch((error)=>{
-        NotificationSet('problem var' , 'error' , error.response.message)
-        dispatch({
-            type: Types.ERROR_PRODUCT,
-            payload: {
-               message:error.response.message
-            }
-        })
-    })
-}
+export const notify = (description, isHappy) => {
+  return {
+    type: types.SET_NOTIFICATION,
+    payload: { description, isHappy },
+  };
+};
 
-
-export const editProduct = (product) => async (dispatch) => {
-    await domainFinder.put(`/products/${product.id}` , product).then((response)=>{
-        dispatch(getProduct())
-        NotificationSet(`Successfully edited ${response.data.name}` , 'success')
-    }).catch((error)=>{
-        dispatch({
-            type: Types.ERROR_PRODUCT,
-            payload: {
-               message:error.response.message
-            }
-        })
-    })
-}
 
