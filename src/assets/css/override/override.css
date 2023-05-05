@@ -1,5 +1,5 @@
 .initechNode {
-  border: solid 3px red;
+  border: solid 3px #e4c590;
   border-radius: 3px;
   padding: 15px;
   margin: 0 4px;
@@ -11,34 +11,34 @@
   word-break: break-word;
 }
 .initechNode.red {
-  border-color: red;
+  border-color: #e4c590;
 }
 .initechNode.green {
   border-color: green;
 }
 
 #initechOrgChart .orgNodeChildGroup .nodeGroupLineVerticalMiddle {
-  border-right: solid 3px red;
+  border-right: solid 3px #e4c590;
 }
 
 #initechOrgChart .nodeLineBorderTop {
-  border-top: solid 3px red;
+  border-top: solid 3px #e4c590;
 }
 
 .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled),
 .ant-btn-primary,
 .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
-  background-color: red !important;
-  border-color: red !important;
+  background-color: #e4c590 !important;
+  border-color: #e4c590 !important;
 }
 
 .ant-checkbox-checked::after {
-  border: 1px solid red !important;
+  border: 1px solid #e4c590 !important;
 }
 
 .ant-checkbox-checked .ant-checkbox-inner {
-  background-color: darkred !important;
-  border-color: red !important;
+  background-color: #e4c590 !important;
+  border-color: #e4c590 !important;
 }
 
 .ant-modal-title, .ant-table-cell, .ant-select-item-option-content, .ant-tabs-tab, .profil-info, .ant-modal-body, .ant-dropdown-menu {
@@ -48,15 +48,15 @@
 .ant-checkbox-wrapper:hover .ant-checkbox-inner,
 .ant-checkbox:hover .ant-checkbox-inner,
 .ant-checkbox-input:focus + .ant-checkbox-inner {
-  border: 1px solid red !important;
+  border: 1px solid #e4c590 !important;
 }
 
 .expandingIcon {
-  color: darkred !important;
+  color: #e4c590 !important;
 }
 
 .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
-  background-color: red !important;
+  background-color: #e4c590 !important;
   opacity: 1;
 }
 
@@ -71,22 +71,22 @@
 }
 
 .ant-btn-primary:hover {
-  background-color: darkred !important;
-  border-color: darkred !important;
+  background-color: #e4c590 !important;
+  border-color: #e4c590 !important;
 }
 
 .ant-btn:not(.ant-btn-primary, .btn-danger, .btn-warning, .ant-btn-icon-only):hover,
 .ant-btn:not(.ant-btn-primary, .btn-danger, .btn-warning, .ant-btn-icon-only):focus {
-  color: red !important;
+  color: #e4c590 !important;
   background-color: #fff;
-  border-color: red !important;
+  border-color: #e4c590 !important;
 }
 
 .ant-menu-vertical .ant-menu-item::after,
 .ant-menu-vertical-left .ant-menu-item::after,
 .ant-menu-vertical-right .ant-menu-item::after,
 .ant-menu-inline .ant-menu-item::after {
-  border-right: 3px solid darkred !important;
+  border-right: 3px solid #e4c590 !important;
 }
 
 .ant-card-actions > li > span a:not(.ant-btn):hover, .ant-card-actions > li > span > .anticon:hover,
@@ -97,17 +97,17 @@
 .ant-menu-submenu-active,
 .ant-menu-submenu-title:hover,
 .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
-  color: red !important;
+  color: #e4c590 !important;
 }
 
 .ant-steps-item-process .ant-steps-item-icon, .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after {
-  background: red;
-  background-color: red;
-  border-color: red;
+  background: #e4c590;
+  background-color: #e4c590;
+  border-color: #e4c590;
 }
 
 .ant-steps-item-finish .ant-steps-item-icon {
-  border-color: red;
+  border-color: #e4c590;
 }
 
 tr.ant-table-expanded-row > td, tr.ant-table-expanded-row:hover > td {
@@ -124,11 +124,11 @@ tr.ant-table-expanded-row > td, tr.ant-table-expanded-row:hover > td {
 }
 
 .text-primary {
-  color: red;
+  color: #e4c590;
 }
 
 .text-danger {
-  color: #d9534f;
+  color: #e4c590;
 }
 
 .ant-modal-header,
@@ -141,7 +141,7 @@ tr.ant-table-expanded-row > td, tr.ant-table-expanded-row:hover > td {
 }
 
 .ant-switch-checked {
-  background-color: red !important;
+  background-color: #e4c590 !important;
 }
 
 .ant-layout.ant-layout-has-sider {
@@ -150,21 +150,21 @@ tr.ant-table-expanded-row > td, tr.ant-table-expanded-row:hover > td {
 
 .ant-menu-item-selected > a,
 .ant-menu-submenu-selected {
-  color: red !important;
+  color: #e4c590 !important;
 }
 
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  background: red !important;
+  background: #e4c590 !important;
 }
 
 .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
 .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after {
-  background: red !important;
+  background: #e4c590 !important;
 }
 
 .ant-menu-item > a:hover,
 .ant-menu-submenu-selected:hover {
-  color: red !important;
+  color: #e4c590 !important;
 }
 
 .ant-menu-inline,
@@ -289,7 +289,7 @@ textarea.ant-input {
 
 /*customize tabs*/
 .ant-tabs-tab .ant-tabs-tab-btn {
-  color: red !important;
+  color: #e4c590 !important;
 }
 
 .ant-tabs-nav {
@@ -301,21 +301,21 @@ textarea.ant-input {
 }
 
 .tab-section .ant-tabs-ink-bar {
-  background-color: red;
+  background-color: #e4c590;
 }
 
 .tab-section .ant-tabs-nav-list .ant-tabs-tab:hover,
 .ant-tabs-nav-list .ant-tabs-tab-active {
-  color: red !important;
+  color: #e4c590 !important;
   transition: 0.3s ease-in-out;
 }
 
 .tab-section .ant-tabs-nav-list .ant-tabs-tab:hover {
-  background: red;
+  background: #e4c590;
 }
 
 .ant-table-tbody > tr.ant-table-row:hover > td {
-  background: red !important;
+  background: #e4c590 !important;
   color: white !important;
 }
 .ant-table-tbody > tr.ant-table-row:hover > td .red, .ant-table-tbody > tr.ant-table-row:hover > td .green, .ant-table-tbody > tr.ant-table-row:hover > td .blue {
@@ -366,8 +366,8 @@ textarea.ant-input {
 
 .btn-danger {
   color: #fff !important;
-  background-color: #d9534f !important;
-  border-color: #d43f3a !important;
+  background-color: #e4c590 !important;
+  border-color: #e4c590 !important;
 }
 
 .btn-warning {
@@ -412,7 +412,7 @@ textarea.ant-input {
 }
 
 .customtable tr:hover {
-  background-color: red;
+  background-color: #e4c590;
 }
 
 .customtable th {
@@ -427,8 +427,8 @@ textarea.ant-input {
 }
 
 .ant-pagination-item-active {
-  color: red;
-  border-color: red;
+  color: #e4c590;
+  border-color: #e4c590;
 }
 
 .padModal .ant-modal-content {
@@ -436,7 +436,7 @@ textarea.ant-input {
 }
 
 .ant-spin-dot-item {
-  background-color: red;
+  background-color: #e4c590;
 }
 
 .padModal .ant-form-item-label {
@@ -471,7 +471,7 @@ textarea.ant-input {
   align-items: center;
   position: relative;
   align-items: center;
-  background: darkred;
+  background: #e4c590;
 }
 .loginbackground::after {
   position: absolute;
@@ -513,7 +513,7 @@ textarea.ant-input {
 }
 
 .border-primary {
-  border: 2px solid red;
+  border: 2px solid #e4c590;
 }
 
 @media (min-width: 992px) {

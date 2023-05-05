@@ -4,7 +4,7 @@ import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
 } from "@ant-design/icons";
-import logo from "./../../../assets/img/logon.png";
+import logo from "../../../assets/img/favicon.svg";
 import { Button, Popover, Tooltip, Avatar, Row, Col } from "antd";
 import { logOut } from "../../../redux/actions";
 import { connect } from "react-redux";
@@ -43,7 +43,7 @@ const TopMenu = (props) => {
     );
   };
 
-    return (
+  return (
     <div className="position-relative">
       <div className="top-menu flex-align-center flex animated slideInDown ">
         {props.showDrawerButton ? (

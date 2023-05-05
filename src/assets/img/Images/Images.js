@@ -26,6 +26,7 @@ import bottomimg from  '../bottomimg.png'
 import manatgreen from '../manatgreen.png'
 import manatwhite from '../manatwhite.png'
 import listshadow from '../listShadow.png'
+import LogoImg from '../favicon.svg'
 export default  {
     bottomimg,
     products1,
@@ -55,4 +56,5 @@ export default  {
     tw,
     yt,
     arrow,
+    LogoImg,
 }

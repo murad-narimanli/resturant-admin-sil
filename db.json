@@ -1,5 +1,16 @@
 {
-  "orders": [],
+  "orders": [
+    {
+      "table_id": 1,
+      "person_id": 3,
+      "person": "Emil Namazaliyev",
+      "table": "table 1",
+      "status": 0,
+      "date": "2023-05-05T10:48:56.648Z",
+      "total": 35,
+      "id": 1
+    }
+  ],
   "order-products": [
     {
       "category_id": 16,
@@ -13,6 +24,19 @@
       "menu": "Səhər Yeməyi 4 Nəfərlik  ",
       "category": "Ailə Səhər Yemək Menyusu",
       "id": 1
+    },
+    {
+      "category_id": 16,
+      "menu_id": 48,
+      "count": 2,
+      "price": 35,
+      "total": 70,
+      "order_id": "2",
+      "status": 1,
+      "image": "https://resant.foodelz.com/uploads/items/IMG_6114739592.png",
+      "menu": "Səhər Yeməyi 4 Nəfərlik  ",
+      "category": "Ailə Səhər Yemək Menyusu",
+      "id": 2
     }
   ],
   "categories": [
@@ -91,7 +115,7 @@
       "id": 5
     },
     {
-      "name": "Gulu Huseynova",
+      "name": "Gulu Suleymanova",
       "id": 6
     }
   ],
@@ -131,7 +155,7 @@
       "id": 1
     },
     {
-      "name": "Sebzeli Atom Bonfile (İki Kişilik) ",
+      "name": "Sebzeli Atom Bonfile (İki Nəfrlik) ",
       "image": "https://resant.foodelz.com/uploads/items/IMG_3950923973.png",
       "category_id": 3,
       "price": 50,
@@ -147,7 +171,7 @@
       "id": 3
     },
     {
-      "name": "Səhər Yeməyi 1 Nəfərlik  15 ",
+      "name": "Səhər Yeməyi 1 Nəfərlik",
       "image": "https://resant.foodelz.com/uploads/items/IMG_4670314885.png",
       "category_id": 4,
       "price": 15,

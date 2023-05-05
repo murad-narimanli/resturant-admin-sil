@@ -998,3 +998,17 @@ m-10 {
   -ms-line-clamp: 1;
   -o-line-clamp: 1;
 }
+
+
+.ant-btn-primary {
+  background-color: #e4c590 !important;
+  border-color: #e4c590 !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: #e4c590 !important;
+}
+
+.ant-table-row:hover {
+  background: #e4c590 !important;
+}

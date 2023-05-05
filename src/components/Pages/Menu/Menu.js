@@ -33,6 +33,7 @@ const Menu = (props) => {
     let [trigger, setTrigger] = useState(0);
     const [cat , setCat] = useState('')
     const [categories, setCategories] = useState([]);
+    
     const getCats = async () => {
         await admin.get(`categories`).then((res) => {
             setCategories(res.data)
@@ -99,36 +100,6 @@ const Menu = (props) => {
                             </Link>
                         </div>
                     </div>
-
-                    {/*<div className="bg-white mt-10 p-1 ">*/}
-                    {/*    <Select*/}
-                    {/*        showSearch*/}
-                    {/*        onChange={(e)=>{ getData(e)}}*/}
-                    {/*        placeholder={'Kategoriyalar'}*/}
-                    {/*        className={'w-100'}*/}
-                    {/*        notFoundContent={null}*/}
-                    {/*        optionFilterProp="children"*/}
-                    {/*        filterOption={(input, option) =>*/}
-                    {/*            option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0*/}
-                    {/*        }*/}
-                    {/*        filterSort={(optionA, optionB) =>*/}
-                    {/*            optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())*/}
-                    {/*        }*/}
-                    {/*    >*/}
-                    {/*        <Option value={undefined}>*/}
-                    {/*          Hamısı*/}
-                    {/*        </Option>*/}
-                    {/*        {*/}
-                    {/*            categories.map((w, i) => {*/}
-                    {/*                return (*/}
-                    {/*                    <Option key={i} value={w.id}>*/}
-                    {/*                        {w.name}*/}
-                    {/*                    </Option>*/}
-                    {/*                );*/}
-                    {/*            })*/}
-                    {/*        }*/}
-                    {/*    </Select>*/}
-                    {/*</div>*/}
 
                 </Col>
 

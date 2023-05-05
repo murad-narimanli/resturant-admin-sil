@@ -8,7 +8,7 @@ import { getUserData } from "./../redux/actions";
 import MenuList from "./Elements/MenuList";
 import { Layout } from "antd";
 import { Button, Drawer, notification } from "antd";
-import logo from "../assets/img/logon.png";
+import logo from "../assets/img/favicon.svg";
 import {
   CheckOutlined,
   MenuUnfoldOutlined,
@@ -39,7 +39,7 @@ class App extends React.Component {
         {!this.state.collapsed ? (
           <Link to="/">
             {" "}
-            <img src={logo} alt="" />{" "}
+            <span className="animated-logo" style={{color: '#e4c590'}}><img src={logo} alt="/"/> Grandmom's Thandir</span>
           </Link>
         ) : null}
         <Button type="primary" onClick={this.onCollapse}>
