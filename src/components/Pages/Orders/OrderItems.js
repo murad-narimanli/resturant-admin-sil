@@ -24,6 +24,7 @@ import admin from "../../../const/api";
 import { useTranslation } from "react-i18next";
 import {noWhitespace, whiteSpace} from "../../../utils/rules";
 import {Link} from "react-router-dom";
+import Spent from '../../../assets/img/spend.jpeg'
 const { Option } = Select
 
 const OrderItems = (props) => {
@@ -32,7 +33,7 @@ const OrderItems = (props) => {
     const { t } = useTranslation();
     const [positions, setPositions] = useState([]);
     const [categories, setCategories] = useState([]);
-    let imageUrl = 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clker.com%2Fcliparts%2FV%2Fv%2FE%2FP%2Fw%2FD%2Frestaurant-md.png&f=1&nofb=1&ipt=ea938079e189f789116b6038df2d8d48148f0cc73892290d52eafd39a2e2c8ae&ipo=images'
+    let imageUrl = 'https://cdn.discordapp.com/attachments/1090686999427551333/1104320741199069305/7717896.jpeg'
     const [image, setImage] = useState(imageUrl);
     const [menus, setMenus] = useState([]);
     const [orderData, setOrderData] = useState({});

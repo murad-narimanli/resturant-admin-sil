@@ -24,7 +24,7 @@ const { Option } = Select;
 
 function EditMenu(props) {
     const [spin, setSpin] = useState(false);
-    let imageUrl = 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clker.com%2Fcliparts%2FV%2Fv%2FE%2FP%2Fw%2FD%2Frestaurant-md.png&f=1&nofb=1&ipt=ea938079e189f789116b6038df2d8d48148f0cc73892290d52eafd39a2e2c8ae&ipo=images'
+    let imageUrl = 'https://cdn.discordapp.com/attachments/1090686999427551333/1104320741199069305/7717896.jpeg'
     const [file, setFile] = useState(imageUrl);
     const [categories, setCategories] = useState([]);
     let editing = props.match.params.id;

@@ -27,7 +27,9 @@ import manatgreen from '../manatgreen.png'
 import manatwhite from '../manatwhite.png'
 import listshadow from '../listShadow.png'
 import LogoImg from '../favicon.svg'
+import Spent from '../spend.jpeg'
 export default  {
+    Spent,
     bottomimg,
     products1,
     products2,
