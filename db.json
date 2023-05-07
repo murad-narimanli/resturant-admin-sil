@@ -49,6 +49,26 @@
       "date": "2023-05-06T16:24:29.141Z",
       "total": 0,
       "id": 5
+    },
+    {
+      "table_id": 1,
+      "person_id": 3,
+      "person": "Emil Namazaliyev",
+      "table": "table 1",
+      "status": 0,
+      "date": "2023-05-06T18:14:41.807Z",
+      "total": 0,
+      "id": 6
+    },
+    {
+      "table_id": 2,
+      "person_id": 6,
+      "person": "Gulu Suleymanova",
+      "table": "table 2",
+      "status": 1,
+      "date": "2023-05-07T07:09:54.869Z",
+      "total": 30,
+      "id": 7
     }
   ],
   "order-products": [
@@ -103,6 +123,19 @@
       "menu": "Səhər Yeməyi 4 Nəfərlik  ",
       "category": "Ailə Səhər Yemək Menyusu",
       "id": 4
+    },
+    {
+      "category_id": 8,
+      "menu_id": 21,
+      "count": 2,
+      "price": 15,
+      "total": 30,
+      "order_id": "7",
+      "status": 0,
+      "image": "https://resant.foodelz.com/uploads/items/IMG_4677282201.png",
+      "menu": " Çoban Qovurma",
+      "category": "Əsas Yeməklər",
+      "id": 5
     }
   ],
   "categories": [
@@ -147,14 +180,6 @@
       "id": 13
     },
     {
-      "name": "Alkoqolsuz Içkilər",
-      "id": 14
-    },
-    {
-      "name": "Alkoqollu Içkilər",
-      "id": 15
-    },
-    {
       "name": "Ailə Səhər Yemək Menyusu",
       "id": 16
     },
@@ -165,6 +190,10 @@
     {
       "name": "Natural soklar",
       "id": 18
+    },
+    {
+      "name": "Alkogolsuz Içkilər",
+      "id": 19
     }
   ],
   "persons": [
@@ -215,9 +244,9 @@
     {
       "name": "Atom Bonfile ",
       "image": "https://resant.foodelz.com/uploads/items/IMG_9774391791.png",
-      "category_id": 3,
+      "category_id": 8,
       "price": 50,
-      "category": "Şefdən Xüsusi Təqdimatla!",
+      "category": "Əsas Yeməklər",
       "id": 1
     },
     {
@@ -264,7 +293,7 @@
       "name": "  Avropa Pendir çeşidləri",
       "image": "https://resant.foodelz.com/uploads/items/IMG_7671360772.png",
       "category_id": 5,
-      "price": 12,
+      "price": 13,
       "category": "Qəlyanaltılar",
       "id": 7
     },
@@ -469,7 +498,7 @@
       "id": 32
     },
     {
-      "name": "Xırçıldayan Toyuq Burger ",
+      "name": "Toyuq Burger ",
       "image": "https://resant.foodelz.com/uploads/items/IMG_5368929920.png",
       "category_id": 12,
       "price": 12,
@@ -526,67 +555,35 @@
     },
     {
       "name": "Sadə su",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F53%2F4a%2F19534a2be73c101206161b297e76f14f.jpg&f=1&nofb=1",
-      "category_id": 14,
+      "image": "https://www.bakenroll.az/ru/image/bonaquaqazsiz.jpg",
+      "category_id": 17,
       "price": 2,
-      "category": "Alkoqolsuz Içkilər",
+      "category": "Sular",
       "id": 40
     },
     {
       "name": "Kompot",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F53%2F4a%2F19534a2be73c101206161b297e76f14f.jpg&f=1&nofb=1",
-      "category_id": 14,
+      "image": "https://static.insales-cdn.com/images/products/1/830/396911422/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D1%82_%D0%B8%D0%B7_%D1%81%D0%B2%D0%B5%D0%B6%D0%B8%D1%85_%D1%84%D1%80%D1%83%D0%BA%D1%82%D0%BE%D0%B2.jpg",
+      "category_id": 19,
       "price": 3,
-      "category": "Alkoqolsuz Içkilər",
+      "category": "Alkogolsuz Içkilər",
       "id": 41
     },
     {
       "name": "Meyvə şirəsi",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F53%2F4a%2F19534a2be73c101206161b297e76f14f.jpg&f=1&nofb=1",
-      "category_id": 14,
+      "image": "https://cdn.tvc.ru/pictures/o/630/47.jpg",
+      "category_id": 19,
       "price": 3,
-      "category": "Alkoqolsuz Içkilər",
+      "category": "Alkogolsuz Içkilər",
       "id": 42
     },
     {
       "name": "Cola Fanta Sprite",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F53%2F4a%2F19534a2be73c101206161b297e76f14f.jpg&f=1&nofb=1",
-      "category_id": 14,
+      "image": "https://shop-cdn1-2.vigbo.tech/shops/2052/products/55986/images/3-fea777544b03264634c1ce71aca94e82.jpg",
+      "category_id": 19,
       "price": 3,
-      "category": "Alkoqolsuz Içkilər",
+      "category": "Alkogolsuz Içkilər",
       "id": 43
-    },
-    {
-      "name": "Olmeca Sliver",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F53%2F4a%2F19534a2be73c101206161b297e76f14f.jpg&f=1&nofb=1",
-      "category_id": 15,
-      "price": 6,
-      "category": "Alkoqollu Içkilər",
-      "id": 44
-    },
-    {
-      "name": "Patron Anejo",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F53%2F4a%2F19534a2be73c101206161b297e76f14f.jpg&f=1&nofb=1",
-      "category_id": 15,
-      "price": 7.5,
-      "category": "Alkoqollu Içkilər",
-      "id": 45
-    },
-    {
-      "name": "Sierra Sliver",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F53%2F4a%2F19534a2be73c101206161b297e76f14f.jpg&f=1&nofb=1",
-      "category_id": 15,
-      "price": 90,
-      "category": "Alkoqollu Içkilər",
-      "id": 46
-    },
-    {
-      "name": "Jagermeister",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F53%2F4a%2F19534a2be73c101206161b297e76f14f.jpg&f=1&nofb=1",
-      "category_id": 15,
-      "price": 6,
-      "category": "Alkoqollu Içkilər",
-      "id": 47
     },
     {
       "name": "Səhər Yeməyi 4 Nəfərlik  ",
@@ -627,6 +624,14 @@
       "price": 35,
       "category": "Ailə Səhər Yemək Menyusu",
       "id": 52
+    },
+    {
+      "name": "Emil Namazaliyev",
+      "image": "https://www.bakenroll.az/ru/image/bonaquaqazsiz.jpg",
+      "category_id": 18,
+      "price": 1,
+      "category": "Natural soklar",
+      "id": 53
     }
   ]
 }
